@@ -92,7 +92,7 @@
     position: relative;
     height : 65vh;
     width: 100%;
-    background-image: url(assets/img/bgclr.jpg);
+    background-image: url(/assets/img/bgclr.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
