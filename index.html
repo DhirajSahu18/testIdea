@@ -9,15 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        window.addEventListener("load", function () {
+          const loader = document.getElementById("loader");
+          loader.style.display = "none";
+        });
+      </script>
 </head>
 <body>
+    <div id="loader">
+        <div class="loader-content">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+        </div>
+      </div>
+      
     <section id="header">
         <div class="header-cus">
             <div class="logo">
-                <img src="assets/img/logo.jpg" alt="Aafiya-Meditreats">
+                <img src="assets/img/logo.jpg" alt="Aafiya-Meditreats" loading="lazy">
             </div>
             <div class="logo-sec">
-                <img src="assets/img/circ-logo.jpg" alt="circular-logo">
+                <img src="assets/img/circ-logo.jpg" alt="circular-logo" loading="lazy">
             </div>
             <div class="writings">
                 <div class="img-wri">
@@ -106,16 +120,48 @@
 	</section>
 
     <section id="secondnav">
-        <div class="navbar-sec">
-            <a href="#" class="active">Overview</a>
-            <a href="#Eligibility">Eligibility</a>
-            <a href="#Preparation">Preparation</a>
-            <a href="#About-Treatment">About Treatment</a>
-            <a href="#Post-Treatment">Post-Treatment Care</a>
-            <a href="#Recovery-tips">Recovery Tips</a>
-            <a href="#collapsesec">FAQs</a>
-            <a href="#customer-rev">Patient-Stories</a>
-          </div>
+          <nav class="navbar navbar-expand-lg navbar-sec bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="#" class="active">Overview</a>
+                </li>
+        <li class="nav-item">
+                <a href="#Eligibility">Eligibility</a>
+            <!-- <a class="nav-link" href="#">About Us</a> -->
+        </li>
+        <li class="nav-item">
+                      <a href="#Preparation">Preparation</a>
+                      <!-- <a class="nav-link" href="#">Treatments +</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Destinations +</a> -->
+                        <a href="#About-Treatment">About Treatment</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#Post-Treatment">Post-Treatment Care</a>
+                      <!-- <a class="nav-link" href="#">Hospitals</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">FAQs</a> -->
+                        <a href="#Recovery-tips">Recovery Tips</a>
+                  </li>
+                  <li class="nav-item">
+                      <!-- <a class="nav-link" href="#">Blog</a> -->
+                      <a href="#collapsesec">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#customer-rev">Patient-Stories</a>
+                    <!-- <a class="nav-link" href="#">Request a Quote</a> -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </section>
 
     <section id="overview">
@@ -586,7 +632,6 @@
                 </div>
                 <hr>
                 <div class="secondbox">
-                    <div class="rows">
                         <div class="logo-fin">
                             <img src="assets/img/logo-removebg-preview.png" alt="" style="background-color: #0C356A;">
                         </div>
@@ -610,7 +655,6 @@
                             <p>Customer service</p>
                             <p><b class="blue">+91 9856555666</b></p>
                         </div>
-                    </div>
                 </div>
             </div>
         </footer>
@@ -626,5 +670,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
     <script src="js/script.js"></script>
+    
 </body>
 </html>

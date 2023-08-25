@@ -671,6 +671,9 @@
       .foot1 {
           padding: 5px;
       }
+      .final-foot{
+        display: inline-block;
+      }
 
       .footer-col {
           width: 50%;
@@ -698,4 +701,289 @@
 
 
   /* Additional Css */
+  #loader {
+    position: fixed;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
   
+  .secondbox{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Mobile Styles */
+@media (max-width: 767px) {
+  /* Header */
+  body {
+    overflow-x: hidden;
+}
+  .secondbox{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-cus {
+      flex-direction: column;
+      align-items: center;
+  }
+  .logo {
+      margin: 10px;
+  }
+  .logo-sec {
+      margin: 10px;
+  }
+  .writings {
+      margin: 10px;
+      flex-direction: column;
+      align-items: center;
+  }
+  .texts-wri {
+      text-align: center;
+  }
+  .dropdown-container {
+      margin-right: 1rem;
+  }
+
+  /* Navbar */
+  .navbar {
+      background: #63e5ff;
+  }
+  .nav-item {
+      margin-left: 15px;
+  }
+
+  /* Intro Section */
+  .home-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+  }
+  .home-text h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+  }
+  .home-text p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+  }
+  .btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+  }
+
+  /* Second Navbar */
+  .navbar-sec {
+      padding: 10px 20px;
+  }
+  .navbar-sec a {
+      margin: 0 5px;
+  }
+
+  /* Treatment Overview */
+  .flex-container {
+      flex-direction: column;
+      margin: 20px;
+      padding: 30px 0;
+  }
+  .left-section,
+  .right-section {
+      padding: 0 20px;
+  }
+
+  /* Form styles */
+  .form-container {
+      width: 100%;
+      padding: 15px;
+      box-shadow: none;
+  }
+  .form-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .form-description {
+      font-size: 14px;
+      margin-bottom: 15px;
+  }
+  .form-input {
+      padding: 8px;
+  }
+  .form-button {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+
+  /* Eligibility section */
+  #classes {
+      margin: 20px;
+  }
+  .eligibility {
+      flex-direction: column;
+  }
+  .form-container {
+      margin: 20px;
+  }
+
+  /* Collapse section */
+  #collapsesec {
+      margin: 20px;
+  }
+  .collapsible {
+      padding: 5px;
+      padding-left: 5px;
+  }
+  .collapsible div {
+      padding-left: 5px;
+  }
+  .content {
+      padding: 5px;
+      padding-left: 10px;
+  }
+
+  /* Customer section */
+  #customer-rev {
+      margin: 20px;
+  }
+  .card {
+      margin: 10px;
+      height: auto;
+      margin-left: 0;
+  }
+  .card-text {
+      padding: 2px 0;
+  }
+  .prof-name p {
+      padding: 0 5px;
+  }
+  .topcard img {
+      max-height: 1.5rem;
+      max-width: 1.5rem;
+      margin-left: 10px;
+  }
+
+  /* DOctors section */
+  .doctor-car {
+      margin: 20px;
+  }
+  .about-doc p {
+      padding: 2px 0;
+  }
+  .top {
+      height: auto;
+      width: 100%;
+  }
+  #doctor-sec {
+      margin: 20px;
+  }
+  .top img {
+      height: auto;
+      width: 100%;
+  }
+
+  /* Hospital section */
+  #Hospital-sec {
+      margin: 20px;
+  }
+  .about-hos p {
+      margin: 0;
+  }
+  .top-hos {
+      height: auto;
+  }
+  .top-hos img {
+      height: auto;
+      width: 100%;
+  }
+
+  /* Footer section */
+  .foots1 {
+      padding: 20px;
+  }
+  .butt {
+      padding: 5px;
+  }
+  .butt button {
+      padding: 5px;
+  }
+  .butt span {
+      padding-left: 5px;
+  }
+  .vertical {
+      left: 50%;
+      margin-left: -1px;
+  }
+  .footer {
+      padding: 20px;
+  }
+  .row {
+      flex-direction: column;
+      padding-bottom: 10px;
+  }
+  .dialog {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+  }
+  .footer-col,
+  .footer-col1 {
+      width: 100%;
+      padding: 0;
+  }
+  .footer-col h4,
+  .footer-col1 h4 {
+      font-size: 16px;
+      margin-bottom: 20px;
+  }
+  .footer-col ul li:not(:last-child),
+  .footer-col1 ul li:not(:last-child) {
+      margin-bottom: 5px;
+  }
+  .smallbox {
+      flex-direction: column;
+  }
+
+  .rows {
+      padding-top: 10px;
+  }
+  .logo-fin img {
+      width: 100%;
+      height: auto;
+  }
+  .about {
+      padding: 5px;
+  }
+  .about h2 {
+      padding: 5px 0;
+  }
+  .logos img {
+      padding: 0 2px;
+  }
+  .follow-us p {
+      padding: 0;
+      margin-bottom: 0;
+  }
+  .final-foot {
+      padding: 10px 20px;
+  }
+}
+
+
+/* Styles for tablets and phones */
+@media (max-width: 1024px) {
+  .header-cus {
+      display: none;
+  }
+  .home {
+      background-image: none;
+      background-color: rgba(37, 37, 189, 0.574); /* Change to desired blue color */
+      padding-top: 100px; /* Adjust spacing */
+  }
+  .home-text {
+      text-align: left;
+      display: inline-block;
+  }
+}
