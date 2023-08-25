@@ -3,6 +3,19 @@
     margin: 0%;
     box-sizing: border-box;
 }
+/*Loader Styles*/
+#loader {
+    position: fixed;
+    top: 50;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
 /* Header code starts */
 .header-cus{
     height: 80px;
@@ -92,7 +105,7 @@
     position: relative;
     height : 65vh;
     width: 100%;
-    background-image: url(/testideamag/assets/img/bgclr.jpg);
+    background-image: url(/assets/img/bgclr.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -701,6 +714,7 @@
 
 
   /* Additional Css */
+<<<<<<< HEAD
   #loader {
     position: fixed;
     top: 50;
@@ -987,3 +1001,6 @@
       display: inline-block;
   }
 }
+=======
+  
+>>>>>>> 2fee5b4ce3b17629bdacf1b2afba79c66c641986
